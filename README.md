@@ -13,10 +13,10 @@ cargo build --release --target riscv64gc-unknown-none-elf --bin app[x]
 4. 到arceos下查看程序是否加载成功
 
 ## pflash.img 镜像格式
-apps_nums:usize ----->二进制程序的个数
-app_size:usize  ----->二进制程序的大小
-...
-[此处存放所有二进制程序的大小]
-app		---->二进制程序
-...
-[此处存放所有二进制程序]
+apps_nums:usize ----->二进制程序的个数    
+app_size:usize  ----->二进制程序的大小    
+...    
+[此处存放所有二进制程序的大小]     
+app		---->二进制程序     
+...    
+[此处存放所有二进制程序]    
