@@ -83,13 +83,9 @@ unsafe extern "C" fn _start(abi_table:usize) -> () {
     }
     let c = 'C';
     let s = "arceos";
-    hello();
-    //putchar(c);
-    puts(s);
-    terminate();
+    putchar(c);
     core::arch::asm!("
-    nop
-    ret",
+    nop",
     clobber_abi("C"),
 )
 }
